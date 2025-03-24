@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+body {
+  background: linear-gradient(135deg, #1e3a8a, #3b82f6); /* Degradado azul */
+  min-height: 100vh;
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Asegúrate de que no haya estilos que afecten los inputs */
+input {
+  color: #000; /* Texto negro */
+  background-color: #fff; /* Fondo blanco */
+}
