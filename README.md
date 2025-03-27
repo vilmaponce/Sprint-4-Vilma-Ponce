@@ -74,16 +74,20 @@ src/
 ├── hooks/            # Hooks personalizados (useLocalStorage)
 ├── pages/            # Páginas de la aplicación (Home, Favorites)
 ├── services/         # Lógica para interactuar con la API (api.js)
-├── styles/           # Estilos globales (TailwindCSS)
+├── TailwindCss/      # (TailwindCSS)
 ├── App.jsx           # Componente principal de la aplicación
 └── main.jsx          # Punto de entrada de la aplicación
 
 Capturas de Pantalla
 Página Principal
+![Vista previa de la app](src/assets/captura1.png)
+
 Página Principal
+![Vista previa de la app](src/assets/captura2.png)
 
 Modal de Favoritos
-Modal de Favoritos
+![Vista previa de la app](src/assets/captura3.png)
+
 
 Contribuciones
 Si deseas contribuir a este proyecto, sigue estos pasos:

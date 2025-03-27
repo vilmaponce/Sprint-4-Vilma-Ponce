@@ -65,6 +65,7 @@ const Home = () => {
 
   return (
     <div className="p-4">
+      
       <h1 className="text-2xl font-bold mb-4">Buscador de Personajes</h1>
       <SearchForm onSearch={handleSearch} />
       <button
@@ -87,18 +88,21 @@ const Home = () => {
           ))}
         </div>
       )}
-
+      
       {isModalOpen && (
         <FavoritesModal
-          favorites={favorites}
-          onClose={() => setIsModalOpen(false)}
-          onRemoveFavorite={(id) => {
-            const updatedFavorites = favorites.filter((fav) => fav.id !== id);
-            setFavorites(updatedFavorites);
-            toast.warn("🗑️ Personaje eliminado de favoritos");
-            
-          }}
-        />
+        favorites={favorites}
+        onClose={() => setIsModalOpen(false)}
+        onRemoveFavorite={(id) => {
+          setFavorites(favorites.filter(fav => fav.id !== id));
+          toast.warn("🗑️ Eliminado de favoritos");
+        }}
+        onRemoveAllFavorites={() => {
+          setFavorites([]);
+          toast.warn("🗑️ Todos los favoritos eliminados");
+          setIsModalOpen(false);
+        }}
+      />
       )}
     </div>
   );
