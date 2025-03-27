@@ -46,50 +46,38 @@ Sigue estos pasos para ejecutar la aplicación en tu entorno local:
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tuusuario/buscador-rickandmorty.git
-Navega al directorio del proyecto:
+**Navega al directorio del proyecto:**
+_cd buscador-rickandmorty_
 
-bash
-Copy
-cd buscador-rickandmorty
-Instala las dependencias:
-
-bash
-Copy
-npm install
-Inicia el servidor de desarrollo:
-
-bash
-Copy
-npm run dev
-Abre tu navegador y visita:
-
-Copy
-http://localhost:5173
+**Instala las dependencias:**
+_npm install_
 
 
-Estructura del Proyecto
-Copy
-src/
-├── components/       # Componentes reutilizables (CharacterCard, SearchForm, etc.)
-├── hooks/            # Hooks personalizados (useLocalStorage)
-├── pages/            # Páginas de la aplicación (Home, Favorites)
-├── services/         # Lógica para interactuar con la API (api.js)
-├── TailwindCss/      # (TailwindCSS)
-├── App.jsx           # Componente principal de la aplicación
-└── main.jsx          # Punto de entrada de la aplicación
+**Inicia el servidor de desarrollo:**
+_npm run dev_
 
-Capturas de Pantalla
-Página Principal
+**Abre tu navegador y visita:**
+_http://localhost:5173_
+
+
+## 🏗️ Estructura del Proyecto
+
+![image](https://github.com/user-attachments/assets/e2bf6482-76a7-402c-80df-6f806a5d4982)
+
+
+
+**Capturas de Pantalla**
+*Página Principal*
 ![Vista previa de la app](src/assets/captura1.png)
 
-Página Principal
+*Página Principal*
 ![Vista previa de la app](src/assets/captura2.png)
 
-Modal de Favoritos
+*Modal de Favoritos*
 ![Vista previa de la app](src/assets/captura3.png)
 
 
-Contribuciones
+**Contribuciones**
 Si deseas contribuir a este proyecto, sigue estos pasos:
 
 Haz un fork del repositorio.
@@ -102,5 +90,8 @@ Haz push a la rama (git push origin feature/nueva-funcionalidad).
 
 Abre un Pull Request.
 
-Licencia
+**✨ Autor**
+*Desarrollado por:* **Vilma Ponce.**
+
+**Licencia**
 Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo LICENSE.
