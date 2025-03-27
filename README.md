@@ -1,6 +1,6 @@
 # Buscador de Personajes de Rick and Morty
 
-¡Bienvenido al **Buscador de Personajes de Rick and Morty**! Esta aplicación te permite buscar personajes de la serie, ver sus detalles, agregarlos a favoritos y gestionar tu lista de personajes favoritos.
+¡Bienvenido al **Buscador de Personajes de Rick and Morty**! Esta aplicación te permite buscar personajes de la serie, ver sus detalles, agregarlos a tus favoritos y gestionar tu lista personalizada.
 
 ## Características Principales
 
@@ -21,23 +21,29 @@
 
 ## Requisitos Técnicos Cumplidos
 
-1. **Uso de Fetch o Axios**:
-   - Se utilizó **Axios** por su sintaxis limpia y manejo sencillo de errores.
+1. **Uso de Axios**:
+   - Se utilizó **Axios** para realizar peticiones HTTP, proporcionando una sintaxis limpia y manejo sencillo de errores.
+   
 2. **Renderizado de Datos y uso de useEffect**:
-   - Los datos se manejan con `useState` y `useEffect`.
+   - Se utilizan los hooks `useState` y `useEffect` para gestionar y mostrar los datos.
    - Se implementó un **loader** mientras se cargan los datos.
+
 3. **Manejo de Formulario Básico**:
    - El formulario permite buscar personajes por nombre y limitar la cantidad de resultados.
+
 4. **Manejo de Errores y Mensajes**:
    - Se capturan errores con `try/catch`.
-   - Se usan notificaciones con `react-toastify` para éxito y errores.
+   - Se usan notificaciones con `react-toastify` para mostrar mensajes de éxito o error.
+
 5. **Agregar a Favorito**:
    - Los personajes se pueden agregar y eliminar de la lista de favoritos.
    - La lista de favoritos persiste en `localStorage`.
+
 6. **Asincronía y Buenas Prácticas**:
-   - Se evitan renderizados innecesarios y se manejan las peticiones de manera eficiente.
+   - Se evitan renderizados innecesarios y se gestionan las peticiones de manera eficiente.
+
 7. **Diseño Responsive**:
-   - La aplicación es completamente responsive gracias a TailwindCSS.
+   - La aplicación es completamente responsive gracias a **TailwindCSS**.
 
 ## Instalación
 
@@ -46,29 +52,22 @@ Sigue estos pasos para ejecutar la aplicación en tu entorno local:
 1. Clona el repositorio:
    ```bash
    git clone https://github.com/tuusuario/buscador-rickandmorty.git
-Navega al directorio del proyecto:
 
-bash
-Copy
-cd buscador-rickandmorty
+# cd buscador-rickandmorty
 Instala las dependencias:
 
-bash
-Copy
-npm install
+# npm install
 Inicia el servidor de desarrollo:
 
-bash
-Copy
-npm run dev
+# npm run dev
 Abre tu navegador y visita:
 
-Copy
+## Copy
 http://localhost:5173
 
 
-Estructura del Proyecto
-Copy
+## Estructura del Proyecto
+El proyecto se organiza de la siguiente manera:
 src/
 ├── components/       # Componentes reutilizables (CharacterCard, SearchForm, etc.)
 ├── hooks/            # Hooks personalizados (useLocalStorage)
