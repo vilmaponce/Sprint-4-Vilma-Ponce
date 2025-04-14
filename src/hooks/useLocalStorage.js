@@ -16,8 +16,8 @@ const useLocalStorage = (key, initialValue) => {
 
   const setValue = (value) => {
     try {
-      setStoredValue(value);
-      window.localStorage.setItem(key, JSON.stringify(value));
+      setStoredValue(value);//actualiza el estado de React
+      window.localStorage.setItem(key, JSON.stringify(value));//actualiza el localStorage
     } catch (error) {
       console.error(error);
     }

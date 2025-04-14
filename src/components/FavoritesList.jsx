@@ -1,4 +1,4 @@
-// src/pages/Favorites.jsx
+//Para el modal
 import useLocalStorage from "../hooks/useLocalStorage";
 import CharacterCard from "../components/CharacterCard";
 import { toast } from "react-toastify";

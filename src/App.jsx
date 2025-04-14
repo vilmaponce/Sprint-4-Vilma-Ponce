@@ -20,7 +20,7 @@ function App() {
 
   return (
     <Router>
-      <Header onFavoritesClick={handleScrollToFooter} /> {/* Pasa la función a Header */}
+      <Header onScrollToFooter={handleScrollToFooter} /> {/* Pasa la función al Header */}
       <div className="container mx-auto p-4">
         <Routes>
           <Route path="/" element={<Home />} />

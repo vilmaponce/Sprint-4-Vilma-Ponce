@@ -11,7 +11,8 @@ export const fetchAllCharacters = async () => {
   while (hasMore) {// Mientras haya más páginas
     try {
       const response = await axios.get(`${API_URL}?page=${page}`);// Obtener la página actual
-      allCharacters = allCharacters.concat(response.data.results);// Concatenar los resultados
+      allCharacters = allCharacters.concat(response.data.results);// Concatenar los resultados para obtener todos los personajes
+      // Verificar si hay más páginas
       hasMore = response.data.info.next !== null; // Verificar si hay más páginas
       page++;
     } catch (error) {

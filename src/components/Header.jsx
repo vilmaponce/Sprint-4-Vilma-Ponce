@@ -1,9 +1,9 @@
-// src/components/Header.jsx
-import { Link } from "react-router-dom";
+
+import { Link } from "react-router-dom"; // Importa Link para la navegación
 import { BsFillLightningFill } from "react-icons/bs";
 import { FaArrowDown } from "react-icons/fa"; // Icono de la flecha
 
-const Header = ({ onFavoritesClick }) => { // Recibe la función como prop
+const Header = ({ onScrollToFooter }) => { // Recibe la función como prop
   return (
     <header className="bg-blue-800 text-white p-4 shadow-md relative">
       <div className="container mx-auto flex justify-between items-center">
@@ -11,16 +11,20 @@ const Header = ({ onFavoritesClick }) => { // Recibe la función como prop
           <BsFillLightningFill className="text-yellow-300" />
           <span>Api Rick & Morty</span>
         </Link>
-        
+
         <nav>
           <ul className="flex items-center space-x-6">
             <li>
               <Link to="/" className="hover:text-blue-300 transition-colors">
                 Inicio
               </Link>
+
+            </li>
+            <li>
+              <Link to="/favorites">Mis Favoritos</Link>
             </li>
             <li
-              onClick={onFavoritesClick} // Aquí ejecutamos la función al hacer clic
+              onClick={onScrollToFooter} // Aquí ejecutamos la función al hacer clic
               className="cursor-pointer"
             >
               {/* Icono de flecha hacia abajo */}

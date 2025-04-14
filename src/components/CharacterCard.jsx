@@ -1,7 +1,7 @@
 // src/components/CharacterCard.jsx
 import { FaHeart, FaTrash } from "react-icons/fa";
 
-const CharacterCard = ({ character, onToggleFavorite, isFavorite }) => {
+const CharacterCard = ({ character, onToggleFavorite, isFavorite }) => { // Desestructuración de props , se recibe el personaje, la función para alternar favoritos y si es favorito o no
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow w-64">
       <img

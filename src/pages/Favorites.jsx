@@ -1,9 +1,9 @@
-// src/pages/Favorites.jsx
+
 import useLocalStorage from "../hooks/useLocalStorage";
 import CharacterCard from "../components/CharacterCard";
 
 const Favorites = () => {
-  const [favorites, setFavorites] = useLocalStorage("favorites", []);
+  const [favorites, setFavorites] = useLocalStorage("favorites", []);//lee del localStorage y lo usa
 
   const handleRemoveFavorite = (id) => {
     const updatedFavorites = favorites.filter((fav) => fav.id !== id);

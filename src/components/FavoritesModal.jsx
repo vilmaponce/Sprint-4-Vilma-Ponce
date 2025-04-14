@@ -1,7 +1,8 @@
 import { FaTimes, FaTrash, FaHeart } from "react-icons/fa";
 
 const FavoritesModal = ({ favorites, onClose, onRemoveFavorite, onRemoveAllFavorites }) => {
-  const handleRemoveAll = () => {
+  const handleRemoveAll = () => { //funcion interna para eliminar todos los favoritos
+    // Confirmar si el usuario realmente quiere eliminar todos los favoritos
     if (favorites.length > 0 && window.confirm(`¿Estás seguro de eliminar ${favorites.length} favoritos?`)) {
       onRemoveAllFavorites();
     }
